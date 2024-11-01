@@ -1,0 +1,51 @@
+/* Flickr widget */
+.widget .flickr-photos {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.widget ul li.flickr-photo {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.widget ul li.flickr-photo a {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: block;
+	line-height: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.widget ul li.flickr-photo a:active,
+.widget ul li.flickr-photo a:focus,
+.widget ul li.flickr-photo a:hover {
+	-webkit-box-shadow: 1px 1px 3px rgba(23,35,34,.85);
+	box-shadow: 1px 1px 3px rgba(23,35,34,.85);
+}
+
+.widget ul li.flickr-photo a img {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.flickr-error {
+	color: #f00;
+	font-weight: bold;
+}
